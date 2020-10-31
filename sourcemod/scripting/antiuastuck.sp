@@ -8,7 +8,7 @@ public Plugin myinfo = {
     name        = "Anti <Unassigned> Stuck",
     author      = "Jobggun",
     description = "",
-    version     = "2.0.0",
+    version     = "2.1.0",
     url         = ""
 };
 
@@ -24,7 +24,7 @@ public void OnPluginStart()
 
 public void OnClientPutInServer(int client)
 {
-    CreateTimer(10.0, Timer_AntiStuck, GetClientSerial(client));
+    CreateTimer(6.0, Timer_AntiStuck, GetClientSerial(client));
     
     if(IsInvalidClient(client))
     {
@@ -32,8 +32,6 @@ public void OnClientPutInServer(int client)
     }
     
     FakeClientCommandEx(client, "autoteam");
-    
-    PrintToChat(client, "[AntiUAStuck] %t", "Welcome");
 }
 
 
@@ -60,6 +58,8 @@ public Action Timer_AntiStuck(Handle timer, int serial)
         return Plugin_Stop;
     }
     
+	PrintToChat(client, "[AntiUAStuck] %t", "Welcome");
+	
     if(TF2_GetClientTeam(client) == TFTeam_Unassigned)
     {
         FakeClientCommandEx(client, "autoteam");
