@@ -4,5 +4,6 @@
   {
     "en"    "When you're stuck in spectator/unassigned team, please use !stuck command in chat."
     "ko"    "만약 관전자 팀에서 나올 수 없다면, !stuck 명령어를 사용하시기 바랍니다."
+	"ru"    "Если вы застряли в команде наблюдателя/неназначенной команде, используйте в чате команду !stuck."
   }
 }
