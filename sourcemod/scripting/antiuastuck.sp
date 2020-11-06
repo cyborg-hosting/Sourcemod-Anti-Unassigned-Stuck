@@ -6,7 +6,6 @@
 #define REQUIRE_PLUGIN
 
 #define VERSION "3.0.0"
-#define DEBUG
 
 #define UPDATE_URL  "https://raw.githubusercontent.com/jobggun/Sourcemod-Anti-Unassigned-Stuck/main/sourcemod/updatefile.txt"
 
