@@ -1,1 +1,22 @@
+"Updater"
+{
+	"Information"
+	{
+		"Version"
+		{
+			"Latest"	"3.0.0"
+		}
 
+		"Notes"	"More info @ https://github.com/jobggun/Sourcemod-Anti-Unassigned-Stuck. Changes in 3.0.0:"
+		"Notes"	"Added ConVars to change default settings ex) announcing autouastuck, etc."
+		"Notes"	"Minor code changes"
+	}
+
+	"Files"
+	{
+		"Plugin"	"Path_SM/plugins/antiuastuck.smx"
+		"Plugin"	"Path_SM/translations/antiuastuck.phrases.txt"
+
+		"Source"	"Path_SM/scripting/antiuastuck.sp"
+	}
+}
